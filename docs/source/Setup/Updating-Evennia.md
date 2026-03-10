@@ -27,6 +27,7 @@ At any time, development is either happening in the `main` branch (latest stable
 4. `evennia stop`
 5. `cd` to the `evennia` repo folder you cloned during the git installation process.
 6. `git pull`
+   > If you get a `Permission denied (publickey)` error here, see the Version Control documentation for help with SSH authentication.
 7. `pip install --upgrade -e .`  (remember the `.` at the end!)
 9. `cd` back to your game dir
 10. `evennia migrate` - this is safe to do, but can be skipped unless the release announcement/changelog specifically tells you to do so. _Ignore_ any warnings about running `makemigrations`, it should _not_ be done!

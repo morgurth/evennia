@@ -279,6 +279,7 @@ From this directory run the following command:
 This will download your fork to your computer. It creates a new folder `evennia/` at your current location. If you installed Evennia using the [Git installation](../Setup/Installation-Git.md), this folder will be identical in content to the `evennia` folder you cloned during that installation. The difference is that this repo is connected to your remote fork and not to the 'original' _upstream_ Evennia.
 
 When we cloned our fork, git automatically set up a 'remote repository' labeled `origin` pointing to it. So if we do `git pull` and `git push`, we'll push to our fork. 
+When we cloned our fork, git automatically set up a 'remote repository' labeled `origin` pointing to it. So if we do `git pull` and `git push`, we'll push to our fork. You can verify this by running `git remote -v`.
 
 We now want to add a second remote repository linked to the original Evennia repo. We will label this remote repository `upstream`: 
 
