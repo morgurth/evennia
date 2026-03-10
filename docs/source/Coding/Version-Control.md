@@ -8,6 +8,21 @@ It's _strongly_ recommended that you [put your game folder under version control
 
 Evennia uses the most commonly used version control system, [Git](https://git-scm.com/) .  For additional help on using Git, please refer to the [Official GitHub documentation](https://help.github.com/articles/set-up-git#platform-all).
 
+## Recommended Project Structure
+
+A common point of confusion is where to put your game folder (`mygame`) in relation to the Evennia source code folder (`evennia`).
+
+The recommended structure is to have them as separate folders next to each other, inside a common parent "development" folder.
+
+```
+my_dev_folder/
+├── evennia/      <-- Your clone of the Evennia engine
+├── mygame/       <-- Your game folder, this is its own git repository
+└── evenv/        <-- Your Python virtual environment
+```
+
+You should **not** create your `mygame` folder inside the `evennia` folder. Keeping them separate makes it much easier to update the Evennia engine without affecting your game code, and allows you to manage the version history of your game independently.
+
 ## Setting up Git
 
 - **Fedora Linux**
